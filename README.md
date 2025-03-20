@@ -1,4 +1,7 @@
 ## EX. NO: 1(A) : IMPLEMENTATION OF CAESAR CIPHER
+
+## NAME : KARTHICK KISHORE T
+## REG NO : 212223220042
  
 
 ## AIM:
@@ -27,8 +30,36 @@ becomes C. To change a message back, each letter is replaced by the one three be
 ### STEP-5: Display the cipher text obtained above.
 
 
-PROGRAM :-
+## PROGRAM :-
+```
+def caesar_cipher(text, shift, mode='encrypt'):
+    result = ""
+    
+    if mode == 'decrypt':
+        shift = -shift  
+    
+    for char in text:
+        if char.isalpha():
+            shift_base = ord('A') if char.isupper() else ord('a')
+            result += chr((ord(char) - shift_base + shift) % 26 + shift_base)
+        else:
+            result += char  
+    
+    return result
 
 
+text = input("Enter your text: ")
+shift = int(input("Enter shift value: "))
+mode = input("Enter mode (encrypt/decrypt): ").strip().lower()
+
+output = caesar_cipher(text, shift, mode)
+print(f"Output: {output}")
+```
 
 OUTPUT :-
+
+# ENCRYPTION
+![encrypt py](https://github.com/user-attachments/assets/15893997-fc37-49af-878d-416795e54005)
+
+# DECRYPTION
+![decrypt py](https://github.com/user-attachments/assets/b46af1f0-d384-485f-a0cb-75d533127351)
