@@ -59,7 +59,8 @@ print(f"Output: {output}")
 OUTPUT :-
 
 # ENCRYPTION
-![encrypt py](https://github.com/user-attachments/assets/15893997-fc37-49af-878d-416795e54005)
+![encrypt py](https://github.com/user-attachments/assets/835f7d9e-3a32-44f1-b70f-42ee7b6212ce)
 
 # DECRYPTION
-![decrypt py](https://github.com/user-attachments/assets/b46af1f0-d384-485f-a0cb-75d533127351)
+![decrypt py](https://github.com/user-attachments/assets/31352eda-933d-4e68-b721-d490cf2e718d)
+
